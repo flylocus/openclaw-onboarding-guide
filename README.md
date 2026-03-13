@@ -1,6 +1,7 @@
 # openclaw-onboarding-guide
 
-> **基于验证过的学习地图结构，引导用户找到正确的 OpenClaw 入口**
+> **A lightweight onboarding router for OpenClaw: help new users find the right starting point before they get lost in too many skills.**  
+> **轻量级 OpenClaw 引导路由器：帮新用户找到正确起点，不在海量技能中迷路**
 
 [![Version](https://img.shields.io/badge/version-1.1.0-blue.svg)](https://github.com/flylocus/openclaw-onboarding-guide)
 [![Phase](https://img.shields.io/badge/phase-Phase%203%20validated-green.svg)](https://github.com/flylocus/openclaw-onboarding-guide)
@@ -8,93 +9,192 @@
 
 ---
 
-## 🎯 这是什么？
+## 🎯 这是什么？What is this?
 
-这是 OpenClaw 的**新用户引导技能**，基于 B 路线 Phase 3 验证成果开发。
+**中文：** 这是 OpenClaw 的**新用户引导技能**，基于 B 路线 Phase 3 验证成果开发。  
+**English:** This is a **new user onboarding skill** for OpenClaw, built on Phase 3 validated findings.
 
-**核心目标：** 帮用户快速找到合适的技能入口，不会在一大堆功能里迷路。
+**核心目标 / Core Goal:**
 
-**不是：** 技能列表、功能大全、技术文档
+- **中文：** 帮用户快速找到合适的技能入口，不会在一大堆功能里迷路。
+- **English:** Help users quickly find the right skill entry point, without getting lost in too many features.
 
-**而是：** 问题分类器、入口路由器、学习路径引导
+**不是 / Not:**
+
+- ❌ 技能列表 / Skill list
+- ❌ 功能大全 / Feature catalog
+- ❌ 技术文档 / Technical documentation
+
+**而是 / But:**
+
+- ✅ 问题分类器 / Problem classifier
+- ✅ 入口路由器 / Entry router
+- ✅ 学习路径引导 / Learning path guide
 
 ---
 
-## ✨ 核心特性
+## 🚀 30 秒试用 / 30-Second Try-Out
 
-### 🗺️ 5 层能力地图
+**中文：** 安装后直接发送以下指令即可验证：  
+**English:** After installation, try sending this message:
+
+```
+我第一次用 OpenClaw，从哪开始？
+I'm new to OpenClaw, where should I start?
+```
+
+**中文：** 如果技能正常工作，你将获得：  
+**English:** If it works, you will receive:
+
+- ✅ **中文：** 一个问题类型判断  
+  **English:** A classification of your problem type
+- ✅ **中文：** 一个推荐的能力层  
+  **English:** A recommended capability layer
+- ✅ **中文：** 不超过 3 个的下一步动作  
+  **English:** 1-3 concrete next steps
+
+---
+
+## 👥 谁适合使用 / Who this is for
+
+| 类型 / Category | 中文描述 / Chinese | English Description |
+|-----------------|-------------------|---------------------|
+| **新手 / New User** | 第一次接触 OpenClaw，不知道从哪开始 | First-time user, not sure where to start |
+| **任务派 / Task-Oriented** | 有明确任务，但不知道用哪个 skill | Have a task, need the right entry point |
+| **自动化 / Automation** | 想做自动化，但分不清工具层还是工作流层 | Want automation, unsure between tool vs. workflow |
+| **系统派 / System Builder** | 想搭长期系统，不知道怎么按顺序组合 | Building a system, need a structured path |
+
+---
+
+## ✨ 核心特性 / Core Features
+
+### 🗺️ 5 层能力地图 / 5-Layer Capability Map
 
 ```
 系统如何工作 → 技能生态 → 执行工具 → 业务补充能力 → 按需能力
     (L1)          (L2)        (L3)          (L4)          (L5)
 ```
 
-不是平铺功能，而是分层引导，让用户知道"自己现在在哪一层"。
+**中文：** 不是平铺功能，而是分层引导，让用户知道"自己现在在哪一层"。  
+**English:** Not a flat feature list, but layered guidance so users know "which layer they're at".
 
 ---
 
-### 🎯 4 问题类型路由
+## 📝 如何给反馈 / How to give feedback
 
-| 类型 | 信号 | 路由 |
-|------|------|------|
-| **A. 新用户** | "从哪开始"、"第一次用" | L1 → L2 |
-| **B. 任务优先** | "写代码"、"处理文档" | L3/L4 |
-| **C. 自动化** ⚠️ | "自动化"、"auto-run" | 追问后路由 |
-| **D. 长期系统** ⚠️ | "搭系统"、"工作流" | L1 + 解释 |
+**中文：** 我们正在进行首轮真实测试，非常欢迎你的反馈！如果你试用后发现任何问题，请告诉我们：  
+**English:** We are in the first round of testing and welcome your feedback! Please let us know if you find any issues:
 
-⚠️ **强制规则：** 自动化和长期系统场景有特殊处理逻辑
+### 反馈问题 / Feedback Questions
+
+1. **中文：** 触发是否准确？  
+   **English:** Was the trigger accurate?
+
+2. **中文：** 路由是否正确？  
+   **English:** Was the routing correct?
+
+3. **中文：** 输出是否足够轻量？  
+   **English:** Was the response concise?
+
+4. **中文：** 下一步行动是否清晰？  
+   **English:** Was the next step clear?
+
+### 反馈方式 / How to provide feedback
+
+- 🐛 **GitHub Issues:** [Open a new issue](https://github.com/flylocus/openclaw-onboarding-guide/issues)
+- 💬 **群聊 / Chat:** 在协作群中直接回复 / Reply directly in our collaboration group
 
 ---
 
-### 🔒 P0/P1 强制规则
+## 🔧 核心机制 / Core Mechanisms
 
-#### P0 规则：自动化二分追问
+### 🎯 4 问题类型路由 / 4 Problem Type Routing
 
-当用户说"自动化"时，**不直接路由**，先追问：
+| 类型 / Type | 信号 / Signals | 路由 / Routing |
+|-------------|----------------|----------------|
+| **A. 新用户 / New User** | "从哪开始"、"第一次用" / "where to start", "first time" | L1 → L2 |
+| **B. 任务优先 / Task-First** | "写代码"、"处理文档" / "write code", "handle docs" | L3/L4 |
+| **C. 自动化 / Automation** ⚠️ | "自动化"、"auto-run" | 追问后路由 / After clarification |
+| **D. 长期系统 / Long-term System** ⚠️ | "搭系统"、"工作流" / "build system", "workflow" | L1 + 解释 / L1 + explanation |
+
+⚠️ **强制规则 / Mandatory Rules:** 自动化和长期系统场景有特殊处理逻辑 / Automation and long-term system scenarios have special handling logic
+
+---
+
+### 🔒 P0/P1 强制规则 / Mandatory Rules
+
+#### P0 规则：自动化二分追问 / Automation Binary Clarification
+
+**中文：** 当用户说"自动化"时，**不直接路由**，先追问：  
+**English:** When user says "automation", **do not route directly**, first clarify:
 
 ```
 你说的"自动化"，更接近哪一种？
+Which type of "automation" do you mean?
 
 A. 把一个任务自动执行掉 → L3/L4
+   Execute a task automatically → L3/L4
 B. 搭一套以后还能复用的流程 → L1
+   Build a reusable workflow → L1
+
+哪一种更符合你的目标？
+Which one matches your goal?
 ```
 
-**为什么：** 验证发现"自动化"太模糊，直接路由容易错。
+**为什么 / Why:**  
+**中文：** 验证发现"自动化"太模糊，直接路由容易错。  
+**English:** Validation found "automation" is too vague, direct routing often fails.
 
 ---
 
-#### P1 规则：长期系统跳步解释
+#### P1 规则：长期系统跳步解释 / Long-term System Context
 
-当用户想搭长期系统时，**先解释再路由**：
+**中文：** 当用户想搭长期系统时，**先解释再路由**：  
+**English:** When user wants to build a long-term system, **explain before routing**:
 
 ```
 如果你只是想完成一次任务，可以直接进工具层。
 但如果你想搭长期系统，先看结构不是绕路，而是减少返工。
 
+If you just want to complete a one-time task, you can go directly to the tool layer.
+But if you want to build a long-term system, understanding the structure first is not a detour—it reduces rework.
+
 因为长期系统最容易出的问题，不是少一个工具，
 而是顺序错了、边界乱了、记忆没接上。
+
+Because the most common problems with long-term systems are not missing a tool,
+but wrong order, unclear boundaries, and disconnected memory.
 ```
 
-**为什么：** 验证发现用户想跳步，但跳步容易返工。
+**为什么 / Why:**  
+**中文：** 验证发现用户想跳步，但跳步容易返工。  
+**English:** Validation found users want to skip steps, but skipping leads to rework.
 
----
+### 📏 输出契约 / Output Contract
 
-### 📏 输出契约
-
-**永远不超过 3 个动作推荐**
+**中文：** 永远不超过 3 个动作推荐  
+**English:** Never recommend more than 3 actions
 
 ```
-1. Problem: [问题类型，一句话]
-2. Layer: [推荐层级 + 原因，一句话]
+1. Problem: [问题类型，一句话 / Problem type, one sentence]
+2. Layer: [推荐层级 + 原因，一句话 / Recommended layer + reason, one sentence]
 3. Actions:
-   1. [动作 1]
-   2. [动作 2]
-   3. [动作 3，可选]
+   1. [动作 1 / Action 1]
+   2. [动作 2 / Action 2]
+   3. [动作 3，可选 / Action 3, optional]
 ```
 
-**不做：** 技能列表轰炸、长篇大论、让用户自己选
+**不做 / Don't:**
 
-**要做：** 问题分类、层级推荐、动作指引
+- ❌ 技能列表轰炸 / Skill list bombardment
+- ❌ 长篇大论 / Long-winded explanations
+- ❌ 让用户自己选 / Make users choose on their own
+
+**要做 / Do:**
+
+- ✅ 问题分类 / Problem classification
+- ✅ 层级推荐 / Layer recommendation
+- ✅ 动作指引 / Action guidance
 
 ---
 
