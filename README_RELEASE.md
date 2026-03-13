@@ -46,7 +46,7 @@ cp -r openclaw-onboarding-guide ~/.copaw/active_skills/
 ```bash
 # 1. Clone 技能仓库
 cd ~/.copaw/active_skills/
-git clone https://github.com/YOUR_USERNAME/openclaw-onboarding-guide.git
+git clone https://github.com/flylocus/openclaw-onboarding-guide.git
 
 # 2. 重启 Copaw
 ```

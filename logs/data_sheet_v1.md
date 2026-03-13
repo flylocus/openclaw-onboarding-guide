@@ -238,7 +238,7 @@ _______________________________________________
 
 ---
 
-**文档位置:** `/Users/shenfei/.copaw/active_skills/openclaw-onboarding-guide/logs/data_sheet_v1.md`  
+**文档位置:** `~/.openclaw/skills/openclaw-onboarding-guide/logs/data_sheet_v1.md`  
 **负责人:** [待定]  
 **更新日期:** 每日更新
 

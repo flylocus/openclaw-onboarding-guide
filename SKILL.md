@@ -155,4 +155,4 @@ Which matches your goal?
 
 **Version:** v1.1 (lean / 收敛版)  
 **Validated:** Phase 3 two-round (2026-03-14)  
-**Location:** `/Users/shenfei/.copaw/active_skills/openclaw-onboarding-guide/SKILL.md`
+**Location:** `~/.openclaw/skills/openclaw-onboarding-guide/SKILL.md`

@@ -376,7 +376,7 @@
 
 | 文档 | 位置 |
 |------|------|
-| SKILL.md | `/Users/shenfei/.copaw/active_skills/openclaw-onboarding-guide/SKILL.md` |
+| SKILL.md | `~/.openclaw/skills/openclaw-onboarding-guide/SKILL.md` |
 | 测试报告 | `test_results_v1.md` |
 | 每日日志 | `logs/daily_YYYY-MM-DD.md` |
 | 周汇总 | `logs/week_X_summary.md` |

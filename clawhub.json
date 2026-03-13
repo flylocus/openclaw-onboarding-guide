@@ -10,7 +10,7 @@
   "min_copaw_version": "0.1.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/YOUR_USERNAME/openclaw-onboarding-guide"
+    "url": "https://github.com/flylocus/openclaw-onboarding-guide"
   },
   "validation": {
     "phase": "Phase 3",

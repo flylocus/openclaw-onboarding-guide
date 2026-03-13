@@ -66,7 +66,7 @@
 ### 日志文件位置
 
 ```
-/Users/shenfei/.copaw/active_skills/openclaw-onboarding-guide/logs/triggers_YYYY-MM-DD.jsonl
+~/.openclaw/skills/openclaw-onboarding-guide/logs/triggers_YYYY-MM-DD.jsonl
 ```
 
 ### 单条日志格式
@@ -129,7 +129,7 @@ python monitor.py --today
 ### 输出位置
 
 ```
-/Users/shenfei/.copaw/active_skills/openclaw-onboarding-guide/logs/
+~/.openclaw/skills/openclaw-onboarding-guide/logs/
 ├── daily_2026-03-15.md
 ├── daily_2026-03-16.md
 ├── ...
@@ -294,4 +294,4 @@ if __name__ == '__main__':
 **版本:** v1  
 **创建日期:** 2026-03-14  
 **目标完成:** 03-17 (日报 + 周汇总)  
-**文档位置:** `/Users/shenfei/.copaw/active_skills/openclaw-onboarding-guide/logs/monitor_requirements_v1.md`
+**文档位置:** `~/.openclaw/skills/openclaw-onboarding-guide/logs/monitor_requirements_v1.md`
