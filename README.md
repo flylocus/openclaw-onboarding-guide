@@ -1,200 +1,148 @@
 # openclaw-onboarding-guide
 
-> **A lightweight onboarding router for OpenClaw: help new users find the right starting point before they get lost in too many skills.**  
-> **轻量级 OpenClaw 引导路由器：帮新用户找到正确起点，不在海量技能中迷路**
+> **A lightweight onboarding router for OpenClaw**  
+> **轻量级 OpenClaw 引导路由器**
 
-[![Version](https://img.shields.io/badge/version-1.1.0-blue.svg)](https://github.com/flylocus/openclaw-onboarding-guide)
+[![Version](https://img.shields.io/badge/version-1.2.0-blue.svg)](https://github.com/flylocus/openclaw-onboarding-guide)
 [![Phase](https://img.shields.io/badge/phase-Phase%203%20validated-green.svg)](https://github.com/flylocus/openclaw-onboarding-guide)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 ---
 
-## 🎯 这是什么？What is this?
+## 🌐 选择语言 / Select Language
 
-**中文：** 这是 OpenClaw 的**新用户引导技能**，基于 B 路线 Phase 3 验证成果开发。  
-**English:** This is a **new user onboarding skill** for OpenClaw, built on Phase 3 validated findings.
+**请点击下方按钮展开对应语言版本：**  
+**Click the buttons below to expand your preferred language:**
 
-**核心目标 / Core Goal:**
-
-- **中文：** 帮用户快速找到合适的技能入口，不会在一大堆功能里迷路。
-- **English:** Help users quickly find the right skill entry point, without getting lost in too many features.
-
-**不是 / Not:**
-
-- ❌ 技能列表 / Skill list
-- ❌ 功能大全 / Feature catalog
-- ❌ 技术文档 / Technical documentation
-
-**而是 / But:**
-
-- ✅ 问题分类器 / Problem classifier
-- ✅ 入口路由器 / Entry router
-- ✅ 学习路径引导 / Learning path guide
+<details>
+<summary><b>🇨🇳 中文版本</b></summary>
 
 ---
 
-## 🚀 30 秒试用 / 30-Second Try-Out
+## 🎯 这是什么？
 
-**中文：** 安装后直接发送以下指令即可验证：  
-**English:** After installation, try sending this message:
+这是 OpenClaw 的**新用户引导技能**，基于 B 路线 Phase 3 验证成果开发。
+
+**核心目标：** 帮用户快速找到合适的技能入口，不会在一大堆功能里迷路。
+
+**不是：**
+
+- ❌ 技能列表
+- ❌ 功能大全
+- ❌ 技术文档
+
+**而是：**
+
+- ✅ 问题分类器
+- ✅ 入口路由器
+- ✅ 学习路径引导
+
+---
+
+## 🚀 30 秒试用
+
+安装后直接发送以下指令即可验证：
 
 ```
 我第一次用 OpenClaw，从哪开始？
-I'm new to OpenClaw, where should I start?
 ```
 
-**中文：** 如果技能正常工作，你将获得：  
-**English:** If it works, you will receive:
+如果技能正常工作，你将获得：
 
-- ✅ **中文：** 一个问题类型判断  
-  **English:** A classification of your problem type
-- ✅ **中文：** 一个推荐的能力层  
-  **English:** A recommended capability layer
-- ✅ **中文：** 不超过 3 个的下一步动作  
-  **English:** 1-3 concrete next steps
+- ✅ 一个问题类型判断
+- ✅ 一个推荐的能力层
+- ✅ 不超过 3 个的下一步动作
 
 ---
 
-## 👥 谁适合使用 / Who this is for
+## 👥 谁适合使用
 
-| 类型 / Category | 中文描述 / Chinese | English Description |
-|-----------------|-------------------|---------------------|
-| **新手 / New User** | 第一次接触 OpenClaw，不知道从哪开始 | First-time user, not sure where to start |
-| **任务派 / Task-Oriented** | 有明确任务，但不知道用哪个 skill | Have a task, need the right entry point |
-| **自动化 / Automation** | 想做自动化，但分不清工具层还是工作流层 | Want automation, unsure between tool vs. workflow |
-| **系统派 / System Builder** | 想搭长期系统，不知道怎么按顺序组合 | Building a system, need a structured path |
+| 类型 | 描述 |
+|------|------|
+| **新手** | 第一次接触 OpenClaw，不知道从哪开始 |
+| **任务派** | 有明确任务，但不知道用哪个 skill |
+| **自动化** | 想做自动化，但分不清工具层还是工作流层 |
+| **系统派** | 想搭长期系统，不知道怎么按顺序组合 |
 
 ---
 
-## ✨ 核心特性 / Core Features
+## ✨ 核心特性
 
-### 🗺️ 5 层能力地图 / 5-Layer Capability Map
+### 🗺️ 5 层能力地图
 
 ```
 系统如何工作 → 技能生态 → 执行工具 → 业务补充能力 → 按需能力
     (L1)          (L2)        (L3)          (L4)          (L5)
 ```
 
-**中文：** 不是平铺功能，而是分层引导，让用户知道"自己现在在哪一层"。  
-**English:** Not a flat feature list, but layered guidance so users know "which layer they're at".
+不是平铺功能，而是分层引导，让用户知道"自己现在在哪一层"。
 
 ---
 
-## 📝 如何给反馈 / How to give feedback
+### 🎯 4 问题类型路由
 
-**中文：** 我们正在进行首轮真实测试，非常欢迎你的反馈！如果你试用后发现任何问题，请告诉我们：  
-**English:** We are in the first round of testing and welcome your feedback! Please let us know if you find any issues:
+| 类型 | 信号 | 路由 |
+|------|------|------|
+| **A. 新用户** | "从哪开始"、"第一次用" | L1 → L2 |
+| **B. 任务优先** | "写代码"、"处理文档" | L3/L4 |
+| **C. 自动化** ⚠️ | "自动化"、"auto-run" | 追问后路由 |
+| **D. 长期系统** ⚠️ | "搭系统"、"工作流" | L1 + 解释 |
 
-### 反馈问题 / Feedback Questions
-
-1. **中文：** 触发是否准确？  
-   **English:** Was the trigger accurate?
-
-2. **中文：** 路由是否正确？  
-   **English:** Was the routing correct?
-
-3. **中文：** 输出是否足够轻量？  
-   **English:** Was the response concise?
-
-4. **中文：** 下一步行动是否清晰？  
-   **English:** Was the next step clear?
-
-### 反馈方式 / How to provide feedback
-
-- 🐛 **GitHub Issues:** [Open a new issue](https://github.com/flylocus/openclaw-onboarding-guide/issues)
-- 💬 **群聊 / Chat:** 在协作群中直接回复 / Reply directly in our collaboration group
+⚠️ **强制规则：** 自动化和长期系统场景有特殊处理逻辑
 
 ---
 
-## 🔧 核心机制 / Core Mechanisms
+### 🔒 P0/P1 强制规则
 
-### 🎯 4 问题类型路由 / 4 Problem Type Routing
+#### P0 规则：自动化二分追问
 
-| 类型 / Type | 信号 / Signals | 路由 / Routing |
-|-------------|----------------|----------------|
-| **A. 新用户 / New User** | "从哪开始"、"第一次用" / "where to start", "first time" | L1 → L2 |
-| **B. 任务优先 / Task-First** | "写代码"、"处理文档" / "write code", "handle docs" | L3/L4 |
-| **C. 自动化 / Automation** ⚠️ | "自动化"、"auto-run" | 追问后路由 / After clarification |
-| **D. 长期系统 / Long-term System** ⚠️ | "搭系统"、"工作流" / "build system", "workflow" | L1 + 解释 / L1 + explanation |
-
-⚠️ **强制规则 / Mandatory Rules:** 自动化和长期系统场景有特殊处理逻辑 / Automation and long-term system scenarios have special handling logic
-
----
-
-### 🔒 P0/P1 强制规则 / Mandatory Rules
-
-#### P0 规则：自动化二分追问 / Automation Binary Clarification
-
-**中文：** 当用户说"自动化"时，**不直接路由**，先追问：  
-**English:** When user says "automation", **do not route directly**, first clarify:
+当用户说"自动化"时，**不直接路由**，先追问：
 
 ```
 你说的"自动化"，更接近哪一种？
-Which type of "automation" do you mean?
 
 A. 把一个任务自动执行掉 → L3/L4
-   Execute a task automatically → L3/L4
 B. 搭一套以后还能复用的流程 → L1
-   Build a reusable workflow → L1
 
 哪一种更符合你的目标？
-Which one matches your goal?
 ```
 
-**为什么 / Why:**  
-**中文：** 验证发现"自动化"太模糊，直接路由容易错。  
-**English:** Validation found "automation" is too vague, direct routing often fails.
+**为什么：** 验证发现"自动化"太模糊，直接路由容易错。
 
 ---
 
-#### P1 规则：长期系统跳步解释 / Long-term System Context
+#### P1 规则：长期系统跳步解释
 
-**中文：** 当用户想搭长期系统时，**先解释再路由**：  
-**English:** When user wants to build a long-term system, **explain before routing**:
+当用户想搭长期系统时，**先解释再路由**：
 
 ```
 如果你只是想完成一次任务，可以直接进工具层。
 但如果你想搭长期系统，先看结构不是绕路，而是减少返工。
 
-If you just want to complete a one-time task, you can go directly to the tool layer.
-But if you want to build a long-term system, understanding the structure first is not a detour—it reduces rework.
-
 因为长期系统最容易出的问题，不是少一个工具，
 而是顺序错了、边界乱了、记忆没接上。
-
-Because the most common problems with long-term systems are not missing a tool,
-but wrong order, unclear boundaries, and disconnected memory.
 ```
 
-**为什么 / Why:**  
-**中文：** 验证发现用户想跳步，但跳步容易返工。  
-**English:** Validation found users want to skip steps, but skipping leads to rework.
+**为什么：** 验证发现用户想跳步，但跳步容易返工。
 
-### 📏 输出契约 / Output Contract
+---
 
-**中文：** 永远不超过 3 个动作推荐  
-**English:** Never recommend more than 3 actions
+### 📏 输出契约
+
+**永远不超过 3 个动作推荐**
 
 ```
-1. Problem: [问题类型，一句话 / Problem type, one sentence]
-2. Layer: [推荐层级 + 原因，一句话 / Recommended layer + reason, one sentence]
+1. Problem: [问题类型，一句话]
+2. Layer: [推荐层级 + 原因，一句话]
 3. Actions:
-   1. [动作 1 / Action 1]
-   2. [动作 2 / Action 2]
-   3. [动作 3，可选 / Action 3, optional]
+   1. [动作 1]
+   2. [动作 2]
+   3. [动作 3，可选]
 ```
 
-**不做 / Don't:**
+**不做：** 技能列表轰炸、长篇大论、让用户自己选
 
-- ❌ 技能列表轰炸 / Skill list bombardment
-- ❌ 长篇大论 / Long-winded explanations
-- ❌ 让用户自己选 / Make users choose on their own
-
-**要做 / Do:**
-
-- ✅ 问题分类 / Problem classification
-- ✅ 层级推荐 / Layer recommendation
-- ✅ 动作指引 / Action guidance
+**要做：** 问题分类、层级推荐、动作指引
 
 ---
 
@@ -450,6 +398,24 @@ B. 搭一套以后还能复用的流程 → L1
 
 ---
 
+## 📝 如何给反馈
+
+我们正在进行首轮真实测试，非常欢迎你的反馈！如果你试用后发现任何问题，请告诉我们：
+
+### 反馈问题
+
+1. 触发是否准确？
+2. 路由是否正确？
+3. 输出是否足够轻量？
+4. 下一步行动是否清晰？
+
+### 反馈方式
+
+- 🐛 **GitHub Issues:** [Open a new issue](https://github.com/flylocus/openclaw-onboarding-guide/issues)
+- 💬 **群聊：** 在协作群中直接回复
+
+---
+
 ## 🔧 开发指南
 
 ### 项目结构
@@ -604,5 +570,597 @@ MIT License - 详见 [LICENSE](LICENSE)
 ---
 
 **最后更新：** 2026-03-13  
-**版本：** v1.1  
+**版本：** v1.2  
 **状态：** Phase 3 Validated ✅
+
+</details>
+
+<details>
+<summary><b>🇬🇧 English Version</b></summary>
+
+---
+
+## 🎯 What is this?
+
+This is a **new user onboarding skill** for OpenClaw, built on Phase 3 validated findings.
+
+**Core Goal:** Help users quickly find the right skill entry point, without getting lost in too many features.
+
+**Not:**
+
+- ❌ Skill list
+- ❌ Feature catalog
+- ❌ Technical documentation
+
+**But:**
+
+- ✅ Problem classifier
+- ✅ Entry router
+- ✅ Learning path guide
+
+---
+
+## 🚀 30-Second Try-Out
+
+After installation, try sending this message:
+
+```
+I'm new to OpenClaw, where should I start?
+```
+
+If it works, you will receive:
+
+- ✅ A classification of your problem type
+- ✅ A recommended capability layer
+- ✅ 1-3 concrete next steps
+
+---
+
+## 👥 Who this is for
+
+| Category | Description |
+|----------|-------------|
+| **New User** | First-time user, not sure where to start |
+| **Task-Oriented** | Have a task, need the right entry point |
+| **Automation** | Want automation, unsure between tool vs. workflow |
+| **System Builder** | Building a system, need a structured path |
+
+---
+
+## ✨ Core Features
+
+### 🗺️ 5-Layer Capability Map
+
+```
+How System Works → Skill Ecosystem → Execution Tools → Business Capabilities → On-Demand
+        (L1)              (L2)             (L3)              (L4)              (L5)
+```
+
+Not a flat feature list, but layered guidance so users know "which layer they're at".
+
+---
+
+### 🎯 4 Problem Type Routing
+
+| Type | Signals | Routing |
+|------|---------|---------|
+| **A. New User** | "where to start", "first time" | L1 → L2 |
+| **B. Task-First** | "write code", "handle docs" | L3/L4 |
+| **C. Automation** ⚠️ | "automation", "auto-run" | After clarification |
+| **D. Long-term System** ⚠️ | "build system", "workflow" | L1 + explanation |
+
+⚠️ **Mandatory Rules:** Automation and long-term system scenarios have special handling logic
+
+---
+
+### 🔒 P0/P1 Mandatory Rules
+
+#### P0 Rule: Automation Binary Clarification
+
+When user says "automation", **do not route directly**, first clarify:
+
+```
+Which type of "automation" do you mean?
+
+A. Execute a task automatically → L3/L4
+B. Build a reusable workflow → L1
+
+Which one matches your goal?
+```
+
+**Why:** Validation found "automation" is too vague, direct routing often fails.
+
+---
+
+#### P1 Rule: Long-term System Context
+
+When user wants to build a long-term system, **explain before routing**:
+
+```
+If you just want to complete a one-time task, you can go directly to the tool layer.
+But if you want to build a long-term system, understanding the structure first is not a detour—it reduces rework.
+
+Because the most common problems with long-term systems are not missing a tool,
+but wrong order, unclear boundaries, and disconnected memory.
+```
+
+**Why:** Validation found users want to skip steps, but skipping leads to rework.
+
+---
+
+### 📏 Output Contract
+
+**Never recommend more than 3 actions**
+
+```
+1. Problem: [Problem type, one sentence]
+2. Layer: [Recommended layer + reason, one sentence]
+3. Actions:
+   1. [Action 1]
+   2. [Action 2]
+   3. [Action 3, optional]
+```
+
+**Don't:**
+
+- ❌ Skill list bombardment
+- ❌ Long-winded explanations
+- ❌ Make users choose on their own
+
+**Do:**
+
+- ✅ Problem classification
+- ✅ Layer recommendation
+- ✅ Action guidance
+
+---
+
+## 📦 Installation
+
+### Prerequisites
+
+- ✅ OpenClaw or Copaw installed
+- ✅ GitHub account (for SSH authentication)
+
+### OpenClaw Installation
+
+```bash
+# Navigate to skills directory
+cd ~/.openclaw/skills/
+
+# Clone the repository
+git clone git@github.com:flylocus/openclaw-onboarding-guide.git
+
+# Verify installation
+ls openclaw-onboarding-guide/SKILL.md
+
+# Restart OpenClaw
+```
+
+### Copaw Installation
+
+```bash
+# Navigate to skills directory
+cd ~/.copaw/active_skills/
+
+# Clone the repository
+git clone git@github.com:flylocus/openclaw-onboarding-guide.git
+
+# Verify installation
+ls openclaw-onboarding-guide/SKILL.md
+
+# Restart Copaw
+```
+
+### Verify Installation
+
+Send this message in OpenClaw/Copaw:
+
+```
+I'm new to OpenClaw, where should I start?
+```
+
+**Expected:** Skill triggers and guides you to the right entry point
+
+---
+
+## 🚀 Usage Examples
+
+### Example 1: New User Onboarding
+
+**User:**
+```
+I'm new to OpenClaw, where should I start?
+```
+
+**Skill Response:**
+```
+1. Problem: New user orientation
+2. Layer: L1 (How System Works) — Understand the overall structure first
+3. Actions:
+   1. Read AGENTS.md to understand system rules
+   2. Check sessions mechanism to understand conversation flow
+   3. Try completing your first small task
+```
+
+---
+
+### Example 2: Automation Scenario (P0 Rule Triggered)
+
+**User:**
+```
+I want to automate this workflow
+```
+
+**Skill Response:**
+```
+Before routing, I need to clarify:
+
+Which type of "automation" do you mean?
+
+A. Execute a task automatically (scheduling, sorting, single-step) → L3/L4
+B. Build a reusable workflow → L1
+
+Which one matches your goal?
+```
+
+**[After user chooses A]**
+
+```
+1. Problem: One-time automation task
+2. Layer: L3 (Execution Tools) — Automate specific steps
+3. Actions:
+   1. Use cron to configure scheduled tasks
+   2. Set execution parameters
+   3. Test once
+```
+
+---
+
+### Example 3: Long-term System (P1 Rule Triggered)
+
+**User:**
+```
+I want to build a long-term system
+```
+
+**Skill Response:**
+```
+1. Problem: Long-term system building
+2. Layer: L1 (How System Works) — Structure first to reduce rework
+
+If you just want to complete a one-time task, you can go directly to the tool layer.
+But if you want to build a long-term system, understanding the structure first is not a detour—it reduces rework.
+
+Because the most common problems with long-term systems are not missing a tool,
+but wrong order, unclear boundaries, and disconnected memory.
+
+3. Actions:
+   1. Understand workflow orchestration mechanism
+   2. Review typical workflow patterns
+   3. Configure your first combination
+```
+
+---
+
+### Example 4: Specific Task
+
+**User:**
+```
+I want to write code
+```
+
+**Skill Response:**
+```
+1. Problem: Clear task execution
+2. Layer: L3 (Execution Tools) — Start coding directly
+3. Actions:
+   1. Use coding-agent
+   2. Describe the code you want to write
+   3. Start development
+```
+
+---
+
+## 📊 Validation Results
+
+### Phase 3 Validation (2026-03-14)
+
+| Metric | Target | Actual | Status |
+|--------|--------|--------|--------|
+| **Trigger Accuracy** | ≥90% | 95% | ✅ |
+| **Routing Acceptance** | ≥80% | 88% | ✅ |
+| **False Trigger Rate** | <10% | 5% | ✅ |
+| **Output Lightness** | No "too complex" feedback | Passed | ✅ |
+
+### Test Case Pass Rate
+
+| Case | Scenario | Before Fix | After Fix | Status |
+|------|----------|------------|-----------|--------|
+| TC-01 | I want to write code | ✅ | ✅ | ✅ |
+| TC-02 | I want to automate a workflow | ⚠️ | ✅ | ✅ |
+| TC-03 | I want to build a long-term system | ⚠️ | ✅ | ✅ |
+
+**Test Report:** [test_results_v1.md](test_results_v1.md)
+
+---
+
+## 🏗️ Capability Structure
+
+### L1: How System Works
+
+**Solves:** How to organize tasks, preserve context, connect workflows
+
+**Suitable for:**
+- Building reusable agent workflows
+- Caring about memory, routing, context organization
+- Wanting to be a continuous collaborator, not a one-time responder
+
+**Representative capabilities:** AGENTS.md / sessions / memory mechanism
+
+---
+
+### L2: Skill Ecosystem
+
+**Solves:** How complex capabilities become callable entry points
+
+**Suitable for:**
+- Quickly finding "how to do this kind of thing"
+- Not wanting to face low-level tools directly
+- Caring more about task entry points than implementation details
+
+**Representative capabilities:** skills-mechanism / clawhub / wrapper
+
+---
+
+### L3: Execution Tools
+
+**Solves:** How to execute specific actions
+
+**Suitable for:**
+- Writing code, using CLI, running workflows
+- Already knowing what to execute
+- Needing to get work done, not understand first
+
+**Representative capabilities:** coding-agent / tmux / cron / himalaya
+
+---
+
+### L4: Business Supplement Capabilities
+
+**Solves:** How capabilities enter real work scenarios
+
+**Suitable for:**
+- Handling documents, content, messages
+- Turning agent into real business assistant
+- Caring about whether a specific work scenario works
+
+**Representative capabilities:** summarize / xlsx / pdf / docx
+
+---
+
+### L5: On-Demand Capabilities
+
+**Solves:** Scenario-based edge capabilities, not in main path
+
+**Suitable for:** Specific scenarios
+
+**Representative capabilities:** browser_visible / dingtalk_channel / news
+
+---
+
+## 📋 Trigger Conditions
+
+### ✅ Will Trigger
+
+- "I'm new to OpenClaw"
+- "Where to start"
+- "Not sure which skill to use"
+- "I want to automate" (triggers P0 clarification)
+- "I want to build a system" (triggers P1 explanation)
+
+### ❌ Won't Trigger
+
+- Already know specific skill name (e.g., "use cron to configure task")
+- Advanced users, beyond onboarding scope
+- Single tool invocation, no guidance needed
+
+---
+
+## 📝 How to Give Feedback
+
+We are in the first round of testing and welcome your feedback! Please let us know if you find any issues:
+
+### Feedback Questions
+
+1. Was the trigger accurate?
+2. Was the routing correct?
+3. Was the response concise?
+4. Was the next step clear?
+
+### How to Provide Feedback
+
+- 🐛 **GitHub Issues:** [Open a new issue](https://github.com/flylocus/openclaw-onboarding-guide/issues)
+- 💬 **Chat:** Reply directly in our collaboration group
+
+---
+
+## 🔧 Development Guide
+
+### Project Structure
+
+```
+openclaw-onboarding-guide/
+├── SKILL.md                      # Main skill file (with P0/P1 rules)
+├── README.md                     # This file
+├── README_RELEASE.md             # Release guide
+├── clawhub.json                  # ClawHub metadata
+├── deployment_plan_v1.md         # Deployment plan
+├── test_results_v1.md            # Test report
+├── .github/
+│   └── ISSUE_TEMPLATE/           # Issue templates
+│       ├── bug_report.md
+│       ├── feedback.md
+│       └── feature_request.md
+├── references/
+│   ├── learning-map-v1.md        # 5-layer capability map
+│   ├── discovery-routing-v1.md   # 4 problem type routing
+│   └── validation-findings-v1.md # P0/P1 fix notes
+└── logs/
+    ├── USAGE.md                  # Usage instructions
+    ├── data_sheet_v1.md          # Data sheet
+    ├── monitor.py                # Monitoring script
+    └── monitor_requirements_v1.md
+```
+
+### Core Files
+
+| File | Purpose | Modification Advice |
+|------|---------|---------------------|
+| **SKILL.md** | Main skill logic | ⚠️ Modify carefully, affects routing |
+| **references/** | Reference docs | ✅ Can update independently |
+| **clawhub.json** | Metadata | ✅ Update version before release |
+| **logs/** | Runtime logs | ✅ Record usage data |
+
+### Local Testing
+
+```bash
+# 1. Navigate to skill directory
+cd ~/.openclaw/skills/openclaw-onboarding-guide
+
+# 2. Modify SKILL.md (carefully!)
+vim SKILL.md
+
+# 3. Restart OpenClaw
+# 4. Send test message to verify
+```
+
+---
+
+## 📈 Monitoring & Feedback
+
+### Core Metrics
+
+| Metric | Target | Description |
+|--------|--------|-------------|
+| Trigger Accuracy | ≥90% | Rate of triggering when should |
+| Routing Acceptance | ≥80% | Rate of users following recommendations |
+| False Trigger Rate | <10% | Rate of triggering when shouldn't |
+| User Follow-up Rate | Natural | >50% may need clearer guidance |
+
+### Report Issues
+
+Found a problem? Please submit an Issue:
+
+- 🐛 **Bug Report** — Skill not working / routing errors
+- 📝 **Test Feedback** — User experience and suggestions
+- 💡 **Feature Request** — New feature ideas
+
+**Issue Link:** https://github.com/flylocus/openclaw-onboarding-guide/issues
+
+---
+
+## 🗺️ Roadmap
+
+### Phase A: Independent Operation (2026-03-15 ~ 2026-03-28)
+
+- [ ] Collect ≥50 real queries
+- [ ] False trigger rate <5%
+- [ ] User acceptance rate >85%
+- [ ] All P0/P1 issues fixed
+
+### Phase B: Data Synthesis (2026-03-29 ~ 2026-04-05)
+
+- [ ] Analyze high-frequency queries
+- [ ] Analyze high-frequency routing paths
+- [ ] Summarize friction points
+- [ ] Release v1.2
+
+### Phase C: Product Decisions (2026-04-06+)
+
+- [ ] Decide whether to join ClawHub marketplace
+- [ ] Decide whether to publish publicly
+- [ ]制定 long-term maintenance plan
+
+**Detailed Plan:** [deployment_plan_v1.md](deployment_plan_v1.md)
+
+---
+
+## 🤝 Contributing
+
+### How to Contribute
+
+1. Fork this repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Create a Pull Request
+
+### Contribution Types
+
+- 🐛 Bug fixes
+- 📝 Documentation improvements
+- 💡 Feature suggestions
+- 🧪 Test feedback
+- 🎨 UX improvements
+
+### Code of Conduct
+
+- Respect others' opinions
+- Constructive feedback
+- Data-driven decisions
+- User value first
+
+---
+
+## 📄 License
+
+MIT License - See [LICENSE](LICENSE) for details
+
+---
+
+## 📞 Contact
+
+| Item | Details |
+|------|---------|
+| **Author** | Shen Fei (@flylocus) |
+| **GitHub** | https://github.com/flylocus |
+| **Repository** | https://github.com/flylocus/openclaw-onboarding-guide |
+| **Issues** | https://github.com/flylocus/openclaw-onboarding-guide/issues |
+
+---
+
+## 🙏 Acknowledgments
+
+Thanks to all users who participated in Phase 3 validation!
+
+This skill was iterated based on real user feedback. Every friction point discovered made the product better.
+
+---
+
+**Last Updated:** 2026-03-13  
+**Version:** v1.2  
+**Status:** Phase 3 Validated ✅
+
+</details>
+
+---
+
+## 📦 CLI Tools Installation
+
+### Core Tools Installed ✅
+
+| Tool | Purpose | Status |
+|------|---------|--------|
+| **himalaya** | Email management (IMAP/SMTP) | ✅ Installed |
+| **grizzly** | Bear Notes management | ✅ Installed |
+
+### Optional Tools
+
+See [CLI Installation Plan](.copaw/docs/openclaw_cli_installation_plan.md) for more tools.
+
+---
+
+**Last Updated:** 2026-03-13  
+**Version:** v1.2  
+**Repository:** https://github.com/flylocus/openclaw-onboarding-guide
