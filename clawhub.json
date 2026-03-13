@@ -1,0 +1,91 @@
+{
+  "name": "openclaw-onboarding-guide",
+  "version": "1.1.0",
+  "description": "Guide users into the right OpenClaw entry point using a validated learning-map structure",
+  "description_zh": "基于验证过的学习地图结构，引导用户找到正确的 OpenClaw 入口",
+  "author": "申飞",
+  "license": "MIT",
+  "tags": ["onboarding", "learning", "routing", "beginner-friendly"],
+  "category": "guidance",
+  "min_copaw_version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR_USERNAME/openclaw-onboarding-guide"
+  },
+  "validation": {
+    "phase": "Phase 3",
+    "status": "validated",
+    "date": "2026-03-14",
+    "test_results": "6/6 passed (100%)"
+  },
+  "features": [
+    "5-layer capability map (System → Ecosystem → Tools → Business → Edge)",
+    "4 problem type routing (New user / Task / Automation / Long-term)",
+    "P0 rule: Automation ambiguity binary follow-up",
+    "P1 rule: Long-term system explanation before routing",
+    "Output contract: Max 3 action recommendations"
+  ],
+  "trigger_conditions": [
+    "User is new to OpenClaw",
+    "User asks 'where to start'",
+    "User doesn't know which skill to use",
+    "User mentions 'automate' (triggers P0 rule)",
+    "User wants long-term system (triggers P1 rule)"
+  ],
+  "key_files": [
+    "SKILL.md",
+    "references/learning-map-v1.md",
+    "references/discovery-routing-v1.md",
+    "references/validation-findings-v1.md"
+  ],
+  "installation": {
+    "method": "copy",
+    "steps": [
+      "tar -xzf openclaw-onboarding-guide.tar.gz",
+      "cp -r openclaw-onboarding-guide ~/.copaw/active_skills/",
+      "Restart Copaw"
+    ]
+  },
+  "usage_examples": [
+    {
+      "query": "我第一次用 OpenClaw，从哪开始？",
+      "expected_layer": "L1",
+      "description": "New user orientation"
+    },
+    {
+      "query": "我想自动化这个流程",
+      "expected_layer": "Ask first (P0 rule)",
+      "description": "Automation ambiguity clarification"
+    },
+    {
+      "query": "我想搭一个长期系统",
+      "expected_layer": "L1",
+      "description": "Long-term system building (with P1 explanation)"
+    }
+  ],
+  "metrics": {
+    "target_accuracy": "≥90%",
+    "target_acceptance_rate": "≥80%",
+    "target_false_trigger_rate": "<10%",
+    "validation_queries": "≥50"
+  },
+  "changelog": {
+    "1.1.0": {
+      "date": "2026-03-13",
+      "changes": [
+        "Fix YAML frontmatter format (remove Markdown syntax)",
+        "Add validation and key_rules fields",
+        "Include README_RELEASE.md for distribution"
+      ]
+    },
+    "1.0.0": {
+      "date": "2026-03-13",
+      "changes": [
+        "Initial release after Phase 3 validation",
+        "5-layer capability map",
+        "P0/P1 mandatory rules",
+        "4 problem type routing"
+      ]
+    }
+  }
+}
