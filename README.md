@@ -1146,21 +1146,6 @@ This skill was iterated based on real user feedback. Every friction point discov
 
 ---
 
-## 📦 CLI Tools Installation
-
-### Core Tools Installed ✅
-
-| Tool | Purpose | Status |
-|------|---------|--------|
-| **himalaya** | Email management (IMAP/SMTP) | ✅ Installed |
-| **grizzly** | Bear Notes management | ✅ Installed |
-
-### Optional Tools
-
-See [CLI Installation Plan](.copaw/docs/openclaw_cli_installation_plan.md) for more tools.
-
----
-
 **Last Updated:** 2026-03-13  
 **Version:** v1.2  
 **Repository:** https://github.com/flylocus/openclaw-onboarding-guide
