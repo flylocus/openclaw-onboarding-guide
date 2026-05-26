@@ -1146,6 +1146,85 @@ This skill was iterated based on real user feedback. Every friction point discov
 
 ---
 
-**Last Updated:** 2026-03-13  
+## 🤖 Code Wiki & AI Integration / Code Wiki 与 AI 集成
+
+To help Google's **Code Wiki** and other LLM indexing engines understand this repository without hallucinations, the following schemas define the codebase architecture and its exact runtime interface.
+
+### 🗺️ AI Architecture Map / 架构地图
+
+```mermaid
+graph TD
+    A[SKILL.md - Core Routing & Rules] --> B[references/learning-map-v1.md - L1-L5 Map]
+    A --> C[references/discovery-routing-v1.md - Problem Templates]
+    A --> D[references/validation-findings-v1.md - P0/P1 Logics]
+    E[clawhub.json - Metadata & Entry] --> A
+    F[logs/monitor.py - Runtime Instrumentation] --> G[logs/data_sheet_v1.md]
+```
+
+- **Core Routing Module ([SKILL.md](file:///Users/shenfei/.openclaw/skills/openclaw-onboarding-guide/SKILL.md))**: Evaluates user query context, applies target rules (P0/P1), and outputs structured layer suggestions.
+- **Metadata Configuration ([clawhub.json](file:///Users/shenfei/.openclaw/skills/openclaw-onboarding-guide/clawhub.json))**: Declares the skill name, description, triggers, and directory boundaries for the OpenClaw market.
+- **Reference Contexts (`references/`):** Grounding database files containing structural classifications (learning maps, test logs) that the LLM uses to make correct routing decisions.
+
+---
+
+### 📥 Declarative Input/Output Interface / 输入输出契约
+
+This skill processes incoming user queries and returns structured actions. The runtime schema matches the following JSON contract:
+
+#### Input Schema (User Message Context)
+```json
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "OnboardingInput",
+  "type": "object",
+  "properties": {
+    "message": {
+      "type": "string",
+      "description": "The raw message sent by the user (e.g., 'I want to automate this process')"
+    },
+    "user_tier": {
+      "type": "string",
+      "enum": ["new", "returning", "advanced"],
+      "description": "User experience level derived from agent history"
+    }
+  },
+  "required": ["message"]
+}
+```
+
+#### Output Schema (Router Response Contract)
+```json
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "OnboardingOutput",
+  "type": "object",
+  "properties": {
+    "problem_type": {
+      "type": "string",
+      "description": "One-sentence classification of the user's problem"
+    },
+    "recommended_layer": {
+      "type": "string",
+      "pattern": "^L[1-5]$",
+      "description": "The recommended capability layer (L1, L2, L3, L4, or L5)"
+    },
+    "actions": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 3,
+      "items": {
+        "type": "string",
+        "description": "A single actionable recommendation step"
+      }
+    }
+  },
+  "required": ["problem_type", "recommended_layer", "actions"]
+}
+```
+
+---
+
+**Last Updated:** 2026-05-26  
 **Version:** v1.2  
 **Repository:** https://github.com/flylocus/openclaw-onboarding-guide
+
