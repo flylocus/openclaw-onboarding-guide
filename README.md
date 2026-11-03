@@ -1161,8 +1161,8 @@ graph TD
     F[logs/monitor.py - Runtime Instrumentation] --> G[logs/data_sheet_v1.md]
 ```
 
-- **Core Routing Module ([SKILL.md](file:///Users/shenfei/.openclaw/skills/openclaw-onboarding-guide/SKILL.md))**: Evaluates user query context, applies target rules (P0/P1), and outputs structured layer suggestions.
-- **Metadata Configuration ([clawhub.json](file:///Users/shenfei/.openclaw/skills/openclaw-onboarding-guide/clawhub.json))**: Declares the skill name, description, triggers, and directory boundaries for the OpenClaw market.
+- **Core Routing Module ([SKILL.md](./SKILL.md))**: Evaluates user query context, applies target rules (P0/P1), and outputs structured layer suggestions.
+- **Metadata Configuration ([clawhub.json](./clawhub.json))**: Declares the skill name, description, triggers, and directory boundaries for the OpenClaw market.
 - **Reference Contexts (`references/`):** Grounding database files containing structural classifications (learning maps, test logs) that the LLM uses to make correct routing decisions.
 
 ---
